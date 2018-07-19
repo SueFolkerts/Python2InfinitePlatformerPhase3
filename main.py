@@ -4,7 +4,7 @@ import sys
 import random
 from platforms import Platforms
 
-# new follows
+# new follows *********************
 from player import *
 player = ''
 def get_player_actions():
@@ -18,7 +18,7 @@ def get_player_actions():
 
 
 def init(p1_actions):
-    # new above
+    # new above  ********************************************************************
     for i in range(height // 100):
         for j in range(width // 420):
             plat = Platforms((random.randint(5, (width - 50) // 10)
@@ -41,10 +41,10 @@ sprite_list = pygame.sprite.Group()
 platforms = pygame.sprite.Group()
 def main():
     game_over = False
-    # new follows *****************************
+    # new follows ***************************************************************
     p1_actions = get_player_actions()
     init(p1_actions)
-    # new above *******************************
+    # new above *******************************************************************
     while True:
         clock.tick(60)
         for event in pygame.event.get():
