@@ -25,9 +25,9 @@ def init(p1_actions):
                 * 10, 120 * i), 'images/grassHalf.png', 70, 40)
             platforms.add(plat)
         # new follows *************************************************
-        player = Player((platforms.sprites()[-1].rect.centerx,
+    player = Player((platforms.sprites()[-1].rect.centerx,
                          platforms.sprites()[-1].rect.centery - 300), p1_actions)
-        sprite_list.add(player)
+    sprite_list.add(player)
         # new above ****************************************************
 
 pygame.init()

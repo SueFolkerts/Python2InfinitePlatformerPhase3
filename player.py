@@ -20,4 +20,4 @@ class Player(pygame.sprite.Sprite):
        self.facing = 'L'
 
     def right(self):
-        self.facing = "R"
+        self.facing = 'R'
